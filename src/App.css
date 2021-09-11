@@ -7,6 +7,8 @@
 }
 
 body {
+  max-width: 900px;
+  margin: auto;
   text-align: center;
   font-family: 'Inter', sans-serif;
   padding: 2ch;
@@ -32,4 +34,17 @@ p {
 
 .state {
   color: #f23074;
+}
+
+#map {
+  max-height: 400px
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h2 {
+  margin-bottom: 0;
 }
