@@ -22,8 +22,12 @@ const colorDict = {
   "": "#000000"
 };
 
+function slugify(string) {
+  return string.toLowerCase().replace(/ /g, '-');
+}
+
 function stateInfoLink(usState, key) {
-  const transEqualityLink = `https://transequality.org/documents/state/${usState}`;
+  const transEqualityLink = `https://transequality.org/documents/state/${slugify(usState)}`;
   return transEqualityLink;
 }
 
